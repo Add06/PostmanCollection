@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "e9fb79a2-3fbd-4533-910c-0f023d0a13c5",
+		"name": "06. Github tools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"id": "c1d65744-b1c8-445f-8aa8-81869b9ca1af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"clientName\": \"Tester\",\n   \"clientEmail\": \"exemplu@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/api-clients"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all tools",
+			"id": "445d0d88-c64c-43b8-979e-1df281f48172",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/tools"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"id": "3fc54bdc-8da6-466a-97df-c41806e4dcd0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1e6a824552e32b6f101689fc8d47ba3a6ae0422d7c7977a2a73ec1e8f413815d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Create e new order",
+			"id": "a062722d-8d83-486d-b7d6-ee280790b9d4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1e6a824552e32b6f101689fc8d47ba3a6ae0422d7c7977a2a73ec1e8f413815d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"toolId\": 4643,\n \"customerName\": \"Stefanutz\",\n \"comment\": \"yass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Create e new order 2",
+			"id": "36d5e04f-9454-44cd-953b-d0bb7d50fd57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1e6a824552e32b6f101689fc8d47ba3a6ae0422d7c7977a2a73ec1e8f413815d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"toolId\": 3486,\n \"customerName\": \"The second order\",\n \"comment\": \"yass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single order",
+			"id": "ce3dee08-2416-44d5-8185-e6ad0677626b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1e6a824552e32b6f101689fc8d47ba3a6ae0422d7c7977a2a73ec1e8f413815d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/orders/KpPqdCdH2DQ3L-UU5_Cov"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single tool",
+			"id": "c77729ed-b74b-4050-afa4-03f89401f87d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/tools/9482"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a order",
+			"id": "614d2b17-f0c7-4936-920a-b2ec230b1ec2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1e6a824552e32b6f101689fc8d47ba3a6ae0422d7c7977a2a73ec1e8f413815d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"customerName\": \"Stefanutz\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-tool-rental-api.glitch.me/orders/KpPqdCdH2DQ3L-UU5_Cov"
+			},
+			"response": []
+		},
+		{
+			"name": "EXE",
+			"id": "ca4c18fe-a824-4347-8f38-d800e1273fbf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
